@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);  /* Beautiful gradient background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for both login and registration */
+.container {
+  background: #fff;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.container h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Form Inputs */
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #6a11cb;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #6a11cb;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2575fc;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Error Message */
+.error {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Toggle Link (Switch between Login & Register) */
+.toggle-link {
+  color: #6a11cb;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 15px;
+  display: block;
+}
+
+.toggle-link:hover {
+  color: #2575fc;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  input, button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+/* Dropdown Styles */
+select {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  appearance: none; /* Removes default browser styles */
+  cursor: pointer;
+}
+
+/* Focus effect like inputs */
+select:focus {
+  border-color: #6a11cb;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+  outline: none;
+}
+
