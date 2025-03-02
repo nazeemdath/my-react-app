@@ -21,3 +21,11 @@ export const registerUser = async (userData) => {
         throw error;
     }
 };
+export const logoutUser = async () => {
+    try {
+        localStorage.removeItem("access_token");
+        localStorage.removeItem("refresh_token");
+    } catch (error) {
+        console.error("Error logging out:", error);
+    }
+};

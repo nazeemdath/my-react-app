@@ -20,7 +20,7 @@ function Login() {
       localStorage.setItem("accessToken", response.access);  // Store token
       localStorage.setItem("refreshToken", response.refresh);
       
-      alert("Login Successful!");
+      
       navigate("/dashboard"); // Redirect to dashboard after login
     } catch (error) {
       setError(error.response?.data?.detail || "Login failed. Please try again.");
